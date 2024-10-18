@@ -13,14 +13,11 @@ public class _Main {
         System.out.println("Введите второе число");
         int number2 = sc.nextInt();
         int result = Calculator.add(number1, number2);
-        String variable1 = "Сумма:";
-        ResultWriterService.print(number1, number2, result, variable1, "+");
+        ResultWriterService.print(number1, number2, result, "Сумма:", "+");
         result = Calculator.subtract(number1, number2);
-        String variable2 = "Разность:";
-        ResultWriterService.print(number1, number2, result, variable2, "-");
+        ResultWriterService.print(number1, number2, result, "Разность:", "-");
         result = Calculator.multiply(number1, number2);
-        String variable3 = "Произведение:";
-        ResultWriterService.print(number1, number2, result, variable3, "*");
+        ResultWriterService.print(number1, number2, result, "Произведение:", "*");
     }
 }
 
